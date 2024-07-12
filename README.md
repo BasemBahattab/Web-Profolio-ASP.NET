@@ -27,7 +27,7 @@
 
   
 ### Languages and Tools:
-- <a href="https://visualstudio.microsoft.com/" target="_blank" rel="noreferrer"> - Visual Stuido 2022 </a>
+- <a href="https://visualstudio.microsoft.com/" target="_blank" rel="noreferrer"> Visual Stuido 2022 </a>
 - <a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" rel="noreferrer"> ASP.NET Core </a>  
 - <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank" rel="noreferrer"> C# </a>
 - <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"> Bootstrap </a> 
