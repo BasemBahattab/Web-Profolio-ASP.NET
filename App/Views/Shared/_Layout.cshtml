@@ -1,0 +1,64 @@
+﻿@{
+    string BACKGROUND_IMG = Background.getBackground();
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Basem's Profolio</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Profolio_ASP.NET_MVC.styles.css" asp-append-version="true" />
+</head>
+<body vw-100>
+    <div class="main-body-bg-mask">
+        <div style="background-image: url(@BACKGROUND_IMG);" class="main-body-bg">
+            <img src={image.src} />
+        </div>
+    </div>
+    <header style="background: transparent;" id="header">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler fw-bold text-white" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <ul class="navbar-nav flex-grow-1 justify-content-center">
+                        <li class="nav-item margin">
+                            <a class="nav-link fw-bold text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" asp-area="" asp-controller="AboutMes" asp-action="Index">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" asp-area="" asp-controller="myProjects" asp-action="Index">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link fw-bold text-white" asp-area="" asp-controller="AboutMes" asp-action="Create">Contact Me</a>
+                        </li>
+                    </ul>
+                    <!-- <partial name="_LoginPartial" /> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="h-100 pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="footer text-white-70 w-100%">
+        <div class="container">
+            &copy; 2024 - Basem Bahattab's Profolio
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

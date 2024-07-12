@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Profolio_ASP.NET_MVC
+build_property.RootNamespace = Profolio_ASP.NET_MVC
+build_property.ProjectDir = C:\Users\Basem\source\repos\Profolio ASP.NET MVC\Profolio ASP.NET MVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Basem\source\repos\Profolio ASP.NET MVC\Profolio ASP.NET MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/AboutMes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRNZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/AboutMes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRNZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/AboutMes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRNZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/AboutMes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRNZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/AboutMes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRNZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/myProjects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlQcm9qZWN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/myProjects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlQcm9qZWN0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/myProjects/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlQcm9qZWN0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/myProjects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlQcm9qZWN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/myProjects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlQcm9qZWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Basem/source/repos/Profolio ASP.NET MVC/Profolio ASP.NET MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zv41m3yno4

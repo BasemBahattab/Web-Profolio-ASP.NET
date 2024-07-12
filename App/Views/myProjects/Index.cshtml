@@ -1,0 +1,200 @@
+﻿@model IEnumerable<Profolio_ASP.NET_MVC.Models.myProject>
+
+@{
+    ViewData["Title"] = "Projects";
+    var searchTerm = "\\wwwroot\\";
+}
+<style>
+    @@media (max-width: 576px) {
+        .container {
+            width: 90dvw;
+        }
+    }
+</style>
+<div class="container-fluid justify-content-center h-100 projects">
+    @foreach (var item in Model)
+    {
+        <div class="justify-content-center h-100 scrollable">
+            <div class="row justify-content-center project" style="height: 95.5vh; padding-top: 3%;">
+                <div class="text-center">
+                    @{
+                        var name = item.Name;
+                        if (name.Contains("Volunteer"))
+                        {
+                            <a href="https://github.com/WinterG2/VPFS" target="_blank" style="color: black;"><h1>@name</h1></a>
+                        }
+                        else if (name.Contains("Portfolio"))
+                        {
+                            <a href="https://github.com/BasemBahattab/Web-Profolio" target="_blank" style="color: black;"><h1>@name</h1></a>
+                        }
+                        else if (name.Contains("Auto"))
+                        {
+                            <a href="https://github.com/BasemBahattab/TrackerSites-using-Telegram-Bot-py" target="_blank" style="color: black;"><h1>@name</h1></a>
+                        }
+                        else
+                        {
+                            <h1>@name</h1>
+                        }
+                    }
+                </div>
+                <div class="images d-flex justify-content-center" style="width:100vh; padding: 0 !important;">
+                    @{
+                        @* var style = "height: 55vh; width: 100vh;"; *@
+                        var style = "    height: 60vw; max-height:50vh; width: auto;";
+                        var flag = true;
+                        var styleFlagged = style + " display: none;";
+                        var folder = item.images;
+                        string currentDirectory = Directory.GetCurrentDirectory();
+                        string[] files = Directory.GetFiles(currentDirectory + searchTerm + folder);
+
+                        foreach (var f in files)
+                        {
+                            int startIndex = f.IndexOf(searchTerm);
+                            string img = f.Substring(startIndex + searchTerm.Length + searchTerm.Length - 1);
+                            @* string img = f.Substring(startIndex + searchTerm.Length); *@
+                            if (flag == true)
+                            {
+                                <img class="gallery" style="@style" src="@img" asp-append-version="true" />
+                                flag = false;
+                                continue;
+
+                            }
+                            <img style="@styleFlagged" src="@img" />
+
+                        }
+                    }
+                </div>
+                <div class="text-center">
+                    <p class="fw-bold fs-6">@item.Description</p>
+                    <p class="fw-bold fs-6">@item.Tools</p>
+                </div>
+@*                 <td>
+            <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+            <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>  *@
+            </div>
+        </div>
+    }
+</div>
+<script alt="scroller page and img">
+    const projectsDiv = document.getElementsByClassName("projects")[0];
+    const scrollerDivs = document.querySelectorAll(".scrollable");
+    const scrollerDivsLength = scrollerDivs.length;
+    const header = document.getElementById('header');
+
+    var counterPage = 0;
+
+    projectsDiv.addEventListener('wheel', async (event) => {
+        event.preventDefault();
+        const delta = event.deltaY;
+
+        if (delta > 0) {
+            counterPage++;
+        } else {
+            counterPage--;
+        }
+
+        if (counterPage >= scrollerDivsLength) {
+            counterPage = 0;
+        } else if (counterPage < 0) {
+            counterPage = scrollerDivsLength - 1;
+        }
+
+        if (counterPage == 0) {
+            header.scrollIntoView();
+            return;
+        }
+        scrollerDivs[counterPage].scrollIntoView({ behavior: 'smooth' });
+        await sleep(5000);
+    });
+
+    var counterImage = 0;
+
+    const imgDiv = document.querySelectorAll(".images");
+
+    imgDiv.forEach((element) => element.addEventListener("click", async (event) => {
+        var imagesLength = element.childElementCount - 1;
+
+        var currWidth = element.clientWidth;
+        var currImg = counterImage;
+
+        var userX = event.clientX;
+        if (currWidth / 2 < userX) {
+            console.log("++")
+            counterImage++;
+        } else {
+            console.log("--")
+            counterImage--;
+        }
+
+        if (counterImage > imagesLength) {
+            counterImage = 0;
+        } else if (counterImage < 0) {
+            counterImage = imagesLength - 1;
+        }
+
+        console.log(currImg + " " + counterImage)
+
+        var currImg = element.children[currImg];
+        var selectedImg = element.children[counterImage];
+
+        currImg.style.display = "none";
+        selectedImg.style.display = "block";
+
+        await sleep(3000);
+    }));
+
+    async function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+</script>
+
+@* <h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tools)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.images)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tools)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.images)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+ *@

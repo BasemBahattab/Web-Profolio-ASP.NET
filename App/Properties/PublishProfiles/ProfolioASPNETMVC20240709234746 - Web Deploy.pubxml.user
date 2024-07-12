@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABM0ztHjt30m5IsIRpIW4FgAAAAACAAAAAAAQZgAAAAEAACAAAABlfb6uy7rjWkE0cCMR+rgFjpqwCaE9lLVBDjSN7Th1tQAAAAAOgAAAAAIAACAAAABWJLSJi92FAB61V6eq5hWWRJTRvqAIr3PtNzxaxeyXLoAAAADhTy/nyJmSMEzjftuZFsoaAO5sFnOKKGtTtcMU+zZrPCgmxY/J2jqDQNl9TF17XfFceBnHeEtaAp26pD4A/W/6NgPB2wGTPHIZhvyM22WxNsAFy+ogkbmIJYhLhKb+4T7kN3g0zP47HeZwtrAdbQQXB2Zqxe8YGBQs93DBnIaof0AAAAA6dKYsihLh8OLw4qMcRcF5BeA/LxjnOcLvipLBveIdchN3fNmxNPJOfnpcyJOxMNWTlJJmFFfFxTn7gy90Rh55</EncryptedPassword>
+    <History>True|2024-07-11T17:31:08.9313083Z;True|2024-07-11T19:19:50.5302240+03:00;True|2024-07-11T00:52:59.8801208+03:00;True|2024-07-11T00:45:53.5680462+03:00;True|2024-07-11T00:43:51.4290644+03:00;True|2024-07-11T00:38:52.9233761+03:00;True|2024-07-11T00:36:48.7529112+03:00;True|2024-07-11T00:24:48.6990926+03:00;True|2024-07-11T00:14:39.6574801+03:00;True|2024-07-11T00:12:00.3018909+03:00;True|2024-07-11T00:02:23.3142532+03:00;True|2024-07-10T02:27:12.2536069+03:00;True|2024-07-10T02:26:11.1848281+03:00;True|2024-07-10T02:24:46.9768225+03:00;True|2024-07-10T02:23:40.4469924+03:00;True|2024-07-10T02:22:26.4661604+03:00;True|2024-07-10T02:18:41.0627981+03:00;True|2024-07-10T02:17:23.2627751+03:00;True|2024-07-10T02:16:00.0944536+03:00;True|2024-07-10T02:14:06.0897200+03:00;True|2024-07-10T02:11:44.1757119+03:00;True|2024-07-10T02:10:02.8743907+03:00;True|2024-07-10T02:08:35.1396058+03:00;True|2024-07-10T02:04:55.4518403+03:00;True|2024-07-10T02:03:56.8411503+03:00;True|2024-07-10T02:02:43.9990653+03:00;True|2024-07-10T01:58:55.0052448+03:00;True|2024-07-10T01:47:22.8661855+03:00;True|2024-07-10T00:42:17.3183663+03:00;True|2024-07-09T23:56:54.0834156+03:00;True|2024-07-09T23:53:50.1354363+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=profoliobasembahattabaspdotnetcore.database.windows.net,1433%3bInitial Catalog="Profolio ASP.NET MVC_db"%3bUser ID=BasemBahattab-DBP%3bPassword=PandaPBD123%40</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Profolio_ASP.NET_MVC.Data.ApplicationDbContext">
+      <Value>Data Source=profoliobasembahattabaspdotnetcore.database.windows.net,1433%3bInitial Catalog="Profolio ASP.NET MVC_db"%3bUser ID=BasemBahattab-DBP%3bPassword=PandaPBD123%40</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

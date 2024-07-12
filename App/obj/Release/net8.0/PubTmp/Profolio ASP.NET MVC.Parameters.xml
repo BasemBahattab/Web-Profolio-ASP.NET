@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ProfolioASPNETMVC20240709234746" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Basem\\source\\repos\\Profolio\ ASP\.NET\ MVC\\Profolio\ ASP\.NET\ MVC\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="Profolio_ASP.NET_MVC.Data.ApplicationDbContext" description="" value="Data Source=profoliobasembahattabaspdotnetcore.database.windows.net,1433;Initial Catalog=&quot;Profolio ASP.NET MVC_db&quot;;User ID=BasemBahattab-DBP;Password=PandaPBD123@" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Basem\\source\\repos\\Profolio\ ASP\.NET\ MVC\\Profolio\ ASP\.NET\ MVC\\obj\\Release\\net8\.0\\PubTmp\\EFSQLScripts\\Profolio_ASP\.NET_MVC\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>

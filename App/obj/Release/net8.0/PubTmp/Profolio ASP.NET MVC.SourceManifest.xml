@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Basem\source\repos\Profolio ASP.NET MVC\Profolio ASP.NET MVC\obj\Release\net8.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Basem\source\repos\Profolio ASP.NET MVC\Profolio ASP.NET MVC\obj\Release\net8.0\PubTmp\EFSQLScripts\Profolio_ASP.NET_MVC.Data.ApplicationDbContext.sql" />
+</sitemanifest>

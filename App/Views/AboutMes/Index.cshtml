@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Profolio_ASP.NET_MVC.Models.AboutMe>
+
+@{
+    ViewData["Title"] = "About Basem";
+    short i = 1;
+}
+
+@* <h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AboutMeParagraph)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonalImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CV)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AboutMeParagraph)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PersonalImage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CV)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> *@
+<style>
+    @@media (max-width: 576px) {
+        .container {
+            width: 90dvw;
+        }
+    }
+</style>
+<div class="container-fluid text-center align-items-center scrollable" style="min-height: 100vh; max-height: 100%;">
+    @foreach (var item in Model)
+    {
+        if (i >= 2){
+            break;
+        }
+        i++;
+        <div class="d-grid align-content-center" style="height:100vh;" id="first">
+            <div class="mb-4">
+                <img style="height: 30vh; width: auto; border-radius: 50%;" src="@item.PersonalImage" />
+            </div>
+            <div>
+                <p class="fw-bold" style="font-size: 1rem;">@item.AboutMeParagraph</p>
+            </div>
+        </div>
+        <div class="d-grid align-content-center justify-content-center" id="second">
+            <a href="https://basembahattabcv.tiiny.site/" class="CV-img" target="_blank">
+                <img style="height: 95vh; width: auto;" src="@item.CV" />
+            </a>
+        </div>
+    }
+</div>
+<script>
+    const scrollerDivs = document.getElementsByClassName("scrollable");
+    const header = document.getElementById('header');
+    const secondDiv = document.getElementById("second");
+
+    Array.from(scrollerDivs).forEach(scrollerDiv => {
+        scrollerDiv.addEventListener('wheel', (event) => {
+            event.preventDefault();
+            const delta = event.deltaY;
+            console.log(delta);
+
+            if (delta > 0) {
+                secondDiv.scrollIntoView();
+            } else {
+                header.scrollIntoView();
+            }
+        });
+    });
+</script>
